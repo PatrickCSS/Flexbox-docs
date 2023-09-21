@@ -1,3 +1,5 @@
+<!--https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox-->
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -8,16 +10,48 @@
     <link rel="stylesheet" href="reset.css">
 </head>
 
+
 <body>
     <h1>Flexbox</h1>
     <h2>Documentação</h2>
     <h3>display: flex</h3>
     <p class="descrição-propriedade">
-        a primeira propriedade que precisa ser declarada para que o Flexbox funcione
+        
+        <p>
+            a primeira propriedade que precisa ser declarada para que o Flexbox funcione é propriedade flex. Da seguinte forma:
+            display: flex;
+        </p>
 
-    </p>
-    <p>Exemplo:</p>
-    <p class="descricao-propiedade">Algumas propriedades como fledirection,justfy content e aligncontent já vem com os valores padrão</p>
+        <p>
+            A propriedade flex-direction permite alterar a direção na qual os elementos flex serão exibidos ao longo do eixo principal. Definindo a propriedade flex-direction como row-reverse (linha reversa) ainda teremos os elementos dispostos em uma linha, entretanto, as linhas inicial e final serão trocadas.
+        </p>
+
+        <p>
+            O Flexible Box Module, geralmente chamado de flexbox, foi projetado tanto como um modelo de layout unidimensional quanto como um método capaz de organizar espacialmente os elementos em uma interface, além de possuir capacidades avançadas de alinhamento. Este artigo fornece um resumo das principais funcionalidades do flexbox, as quais exploraremos com mais detalhes no restante deste guia.
+            Quando se descreve o flexbox como sendo unidimensional, enfatiza-se o fato de que ele lida com o layout em uma dimensão de cada vez - seja uma linha ou uma coluna.
+        </p>
+        <p>
+
+        Os eixos do flexbox
+        Ao se utilizar o flexbox, é preciso ter em mente que todas as operações realizadas relacionam-se a dois eixos: o eixo principal e o eixo transversal. O eixo principal é definido através da propriedade flex-direction e o eixo transversal encontra-se na direção perpendicular a ele. Como esses eixos são as engrenagens fundamentais do flexbox é necessário compreender minuciosamente o seu funcionamento.
+        </p>
+    
+        <p>
+            Eixo principal
+            A propriedade flex-direction define a direção do eixo principal e pode tem quatro valores possíveis:
+            
+            row
+            row-reverse
+            column
+            column-reverse
+            Se o valor escolhido for row (linha) ou row-reverse (linha reversa), seu eixo principal se moverá ao longo da linha — na direção inline.
+            
+            Se o valor escolhido for column (coluna) ou column-reverse (coluna reversa) e o eixo principal se moverá do topo até o fim da página — na direção block.
+        </p>
+            
+        </p>
+
+        <p class="descricao-propiedade">Algumas propriedades como fledirection,justfy content e aligncontent já vem com os valores padrão</p>
 
     <!--table>(tr>th.propriedade+.valor)+tr*3>td.propriedade+td.valor-->
     <table>
@@ -38,12 +72,61 @@
             <td class="valor">flex-start</td>
         </tr>
     </table>
+    
+    <p> <strong> Container </strong> </p>
+    
+        <p> No exemplo abaixo o Container (Aquele que armazena um grupo de valores/informações) está utilizando um alinhamento padrão flex-direction:row  ou seja organizado em forma de linha. Caso fosse o row-reverse também seria organizado em forma de linha,porém nesse caso orientado de forma reversa, ou seja ao invés de ser orientado da esquerda para a direita, como o próprio nome sugere ele sera orientado de forma reversa da direita para esquerda. </p>
 
     <div class="container">
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
+        <div class="contido">contido 1</div>
+        <div class="contido">contido 2</div>
+        <div class="contido">contido 3</div>
+        
     </div>
+
+    <!--usar row-reverse nesse bloco-->
+    <p> <strong> Container </strong> </p>
+    <div class="container">
+        <div class="contido">contido 3</div>
+        <div class="contido">contido 2</div>
+        <div class="contido">contido 1</div>
+        
+    </div>
+
+    </p>
+
+    <p>Se o valor escolhido for column (coluna) o eixo principal se moverá do topo até o fim da página, orientado de cima para baixo ou de forma contrária sob propriedade column-reverse (coluna reversa) como nos exemplos abaixo.</p>
+      
+    <!--usar columm nesse bloco-->
+    <div class="container">
+        <div class="contido">contido 1</div>
+        <div class="contido">contido 2</div>
+        <div class="contido">contido 3</div>
+    
+    </div>
+
+    </p>
+
+      <!--usar columm-reverse nesse bloco-->
+    <div class="container">
+        <div class="contido">contido 3</div>
+        <div class="contido">contido 2</div>
+        <div class="contido">contido 1</div>
+    
+    </div>
+
+    <h3>Propriedade flex-wrap</h3>
+    
+    <p>Quebra de linha com "flex-wrap"
+        Embora o flexbox seja um modelo unidimensional, é possível fazer com que elementos flex sejam agrupados em múltiplas linhas. Ao fazer isso, considera-se cada linha como um novo contêiner flex. Qualquer distribuição espacial ocorrerá ao longo essa linha, sem referência às linhas de ambos os lados. Para gerar a quebra automática das linhas adicione a propriedade flex-wrap com o valor wrap. Assim, se elementos forem muito grandes para serem exibidos em uma única linha, eles serão agrupados em outras linhas.
+        
+        O exemplo prático abaixo contém elementos flex aos quais foi dada uma determinada largura, cuja soma totaliza um valor grande demais para caber no container. Visto que a propriedade flex-wrap está definida como wrap, os itens serão reorganizados em mais de uma linha. Trocando-se para nowrap, que também é o valor inicial, eles encolherão para caber no contêiner, porque estão usando valores iniciais de flexbox que permitem que os itens encolham. O uso do nowrap causaria um vazamento se os itens não encolhessem ou não diminuíssem o suficiente para caber
+    </p>
+    
+    <h3>Propriedade flex-flow </h3>
+    Propriedade abreviada flex-flow, pode-se combinar as propriedades flex-direction e flex-wrap de forma abreviada através da propriedade flex-flow. O primeiro valor especificado é o flex-direction e o segundo valor é o flex-wrap.
+
+    No exemplo prático abaixo, tente alterar o primeiro valor para um dos valores permitidos para a propriedade flex-direction - row, row-reverse, column ou column-reverse, e também altere o segundo para wrap e nowrap.
+
 </body>
 </html>
