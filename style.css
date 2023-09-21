@@ -1,0 +1,15 @@
+.conteiner {
+    height: 300px;
+    background-color: darkgrey;
+    border: 5px solid #f80101;
+   display: flex;
+    flex-direction: row;
+}
+
+.contido {
+    width: 100px;
+    height: 100px;
+    background-color: chartreuse;
+    border: 1px solid #000;
+
+}
