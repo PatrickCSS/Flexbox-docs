@@ -1,5 +1,7 @@
 <!--https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox-->
 
+<!--https://danieldcs.com/css-flexbox-guia-pratico/#:~:text=Os%20principais%20valores%20desta%20propriedade%20s%C3%A3o%3A%201%20flex-start%3A,alinhados%20seguindo%20a%20linha%20base%20do%20seu%20texto.-->
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -89,20 +91,22 @@
     <!--table>(tr>th.propriedade+.valor)+tr*3>td.propriedade+td.valor-->
     <table>
         <tr>
-            <th class="propriedade">propriedade</th>
-            <td class="valor">valor</td>
+            <th class="propriedade">Propriedade</th>
+            <td class="valor"><u>Valor:</u></td>
         </tr>
         <tr>
-            <td class="propriedade">flex-direction></td>
-            <td class="valor">row</td>
+        </tr>
+        <tr>
+            <td class="propriedade">flex-direction</td>
+            <td class="valor"><u>row:</u></td>
         </tr>
         <tr>
             <td class="propriedade">justfy-content</td>
-            <td class="valor">flex-start</td>
+            <td class="valor"><u>flex-start</u></td>
         </tr>
         <tr>
             <td class="propriedade">align-content</td>
-            <td class="valor">flex-start</td>
+            <td class="valor"><u>flex-start</u></td>
         </tr>
     </table>
 
@@ -140,15 +144,62 @@
     flex-direction - row, row-reverse, column ou column-reverse, e também altere o segundo para wrap e nowrap.
 
     <h3>Demonstração</h3>
-    <p>A demonstração a seguir mostra como as linhas são empilhadas dependendo do align-content valor:
-
-        A lista vermelha está definida para flex-start
-        A lista amarela está definida para flex-end
-        A lista azul está definida para center
-        A lista verde está definida para space-between
-        A lista rosa está definida para space-around
-        A lista marrom está definida para stretch
+    <p>
+        A demonstração a seguir mostra como as linhas são empilhadas dependendo do align-content valor:
     </p>
+    <!--baseline: Os itens são alinhados seguindo a linha base do seu texto.-->
+    <section>
+        <p>
+            A lista vermelha está definida para flex-start
+        </p>
+        <p>
+            flex-start: Os itens são alinhados no inicio.
+        </p>
+    </section>    
+
+    <section>
+        <p>
+            A lista amarela está definida para flex-end
+        </p>
+
+        <p>
+            flex-end: Os itens são alinhados no fim.
+        </p>
+    </section>
+
+    <section>
+        <p>
+            A lista azul está definida para center
+        </p>
+        <p>
+            center: Os itens são alinhados ao centro.
+        </p>
+    </section>
+
+    <section>
+        <p>
+            A lista verde está definida para space-between
+        </p>
+
+        <p>
+            
+        </p>
+    </section>
+    <p>
+        A lista rosa está definida para space-around
+    </p>
+
+    <p>
+
+    </p>
+    <section>
+        <p>
+            A lista marrom está definida para stretch
+        </p> 
+        <p>
+            stretch: Os itens são esticados de forma igual, preenchendo o container.    
+        </p>
+    </section>
 
     <ul class="flex-container flex-start">
         <li class="flex-item">1</li>
