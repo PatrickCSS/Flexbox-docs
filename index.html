@@ -1,7 +1,5 @@
 <!--https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox-->
 
-<!--https://danieldcs.com/css-flexbox-guia-pratico/#:~:text=Os%20principais%20valores%20desta%20propriedade%20s%C3%A3o%3A%201%20flex-start%3A,alinhados%20seguindo%20a%20linha%20base%20do%20seu%20texto.-->
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -95,16 +93,16 @@
             <td class="valor"><strong>valor</strong></td>
         </tr>
         <tr>
-            <td class="propriedade">flex-direction></td>
+            <td class="propriedade">flex-direction</td>
             <td class="valor">row</td>
         </tr>
         <tr>
             <td class="propriedade">justfy-content</td>
-            <td class="valor"><u>flex-start</u></td>
+            <td class="valor">flex-start</td>
         </tr>
         <tr>
             <td class="propriedade">align-content</td>
-            <td class="valor"><u>flex-start</u></td>
+            <td class="valor">flex-start</td>
         </tr>
     </table>
 
@@ -133,24 +131,161 @@
         para caber no contêiner, porque estão usando valores iniciais de flexbox que permitem que os itens encolham. O
         uso do nowrap causaria um vazamento se os itens não encolhessem ou não diminuíssem o suficiente para caber
     </p>
+    <section id="propriedadeflewflow">
+        <article>        
+            <h3>Propriedade flex-flow </h3>
+            <p>
+                Propriedade abreviada flex-flow, pode-se combinar as propriedades flex-direction e flex-wrap de forma
+                abreviada
+                através da propriedade flex-flow. O primeiro valor especificado é o flex-direction e o segundo valor é o
+                flex-wrap.
+            </p>
+            <p>
+                No exemplo prático abaixo, tente alterar o primeiro valor para um dos valores permitidos para a
+                propriedade:
+            <section>
+                <p>
+                    row:
+                </p>
+                <p>
+                    Valor padrão.Os itens flexíveis serão exibidos horizontalmente, como uma linha.
+                </p>    
 
-    <h3>Propriedade flex-flow </h3>
-    Propriedade abreviada flex-flow, pode-se combinar as propriedades flex-direction e flex-wrap de forma abreviada
-    através da propriedade flex-flow. O primeiro valor especificado é o flex-direction e o segundo valor é o flex-wrap.
+            </section>
+            <section>
+                <p>
+                    row-reverse:
+                </p>
+                <p>
+                    Os itens flexíveis serão exibidos horizontalmente, como uma linha, porém sob ordem reversa.
+                </p>
+            </section>
+            <section>
+                <p>
+                    column :
+                </p>
+                <p>
+                     Os itens flexíveis serão exibidos verticalmente, como uma coluna.
+                </p>
+            </section>
+            <section>
+                <p>
+                    column-reverse: 
+                </p>
+    
+                <p>
+                    Os itens flexíveis serão exibidos verticalmente, como uma coluna, porém em ordem reversa.
+                </p>
+            </section>
+            <section>
+                <p>
+                    wrap:
+                </p>
+                <p>
+                    A propriedade especifíca se os itens flexíveis serão agrupados se necessário não.
+                </p>
+            </section>
 
-    No exemplo prático abaixo, tente alterar o primeiro valor para um dos valores permitidos para a propriedade
-    flex-direction - row, row-reverse, column ou column-reverse, e também altere o segundo para wrap e nowrap.
+            <section>
+                <p>
+                    nowrap:
+                </p>
+                <p>
+                    Valor padrão,especifica que os itens flexíveis não serão agrupados.
+                </p>
+            </section>
+        </article>
+    </section>
+    <section>
 
-    <h3>Demonstração</h3>
-    <p>A demonstração a seguir mostra como as linhas são empilhadas dependendo do align-content valor:
+        <h3>Propriedade align-items</h3>
+        <p>
+            <strong>
+                A propriedade align-items irá alinhar os elementos no eixo transversal.
+            </strong>
+        </p>
+        <p>
+            O valor inicial desta propriedade é stretch e é por essa razão que, por padrão, os elementos flex se
+            estendem até a maior altura. De fato, eles se esticam para preencher o contêiner flex - o item mais alto
+            define a altura deste.
+        </p>
 
-        A lista vermelha está definida para flex-start
-        A lista amarela está definida para flex-end
-        A lista azul está definida para center
-        A lista verde está definida para space-between
-        A lista rosa está definida para space-around
-        A lista marrom está definida para stretch
-    </p>
+        <p>
+            Pode-se definir a propriedade align-items como flex-start, de modo que os elementos fiquem alinhados com
+            topo do contêiner, flex-end para alinhá-los a partir da base ou center, para que o alinhamento seja
+            centralizado.
+        </p>
+
+        <p>
+            Teste essa propriedade e seus possíveis valores no exemplo prático abaixo — colocou-se uma determinada
+            altura no contêiner flex, de modo que se perceba como os elementos podem ser movidos no interior do mesmo.
+            Veja o que acontece ao definir cada um dos possíveis valores da propriedade align-items:
+
+            stretch
+            flex-start
+            flex-end
+            center
+        </p>
+
+    </section>
+    <section id="demonstração">
+        <article>
+            <h3>Demonstração</h3>
+            <p>
+                A demonstração a seguir mostra como as linhas são empilhadas dependendo do align-content valor:
+            </p>
+        </article>
+        <details>
+            <article>
+                <p>
+                    A lista vermelha está definida para flex-start:
+                </p>
+                <p>
+
+                </p>    
+            </article>
+            <article>
+                <p>
+                    A lista amarela está definida para flex-end:
+                </p>
+                <p>
+
+                </p>
+            </article>
+            <article>
+                <p>
+                    A lista azul está definida para center:
+                </p>
+                <p>
+
+                </p>
+            </article>
+            <article>
+                <p>
+                    A lista verde está definida para space-between:
+                </p>
+                <p>
+
+                </p>
+            </article>
+            <article>
+                <p>
+                    A lista rosa está definida para space-around:
+                </p>
+                <p>
+
+                </p>
+            </article>
+            <article>
+                <p>                           
+                    A lista marrom está definida para stretch:
+                </p>
+                <p>
+                    Valor padrão. As linhas se esticam para ocupar o espaço restante.
+                </p>
+            </article>
+        </details>
+    </section>
 
     <ul class="flex-container flex-start">
         <li class="flex-item">1</li>
