@@ -15,8 +15,7 @@
 <body>
     <h1>Flexbox</h1>
     <h2>Documentação</h2>
-    <h3>display: flex</h3>
-    <p class="descrição-propriedade">
+          <p class="descrição-propriedade">
 
     <h2>Módulo de layout CSS Flexbox</h2>
     <p>
@@ -26,46 +25,78 @@
         </strong>
     </h3>
 
-    <strong>
-        Block: Para seções de uma página da web
-        Inline: Para texto
-        Table: Para dados de tabela bidimensionais
-        Positioned: Para posição explícita de um elemento
-    </strong>
+    <article>
+        <strong>
+            <p>
+                Block: Para seções de uma página da web
+            </p>
+            <p>
+                Inline: Para texto
+            </p>
+            <p>
+                Table: Para dados de tabela bidimensionais
+            </p>
+            <p>
+                Positioned: Para posição explícita de um elemento
+            </p>
+        </strong>
+    </article>
+    
+    <article>
+        <section>
+            <h3>
+                O módulo de layout de caixa flexível torna mais fácil projetar uma estrutura de layout responsiva e flexível sem
+                usar flutuação ou posicionamento.
+            </h3>
+        </section>
+    
+        <section>
+            <p>
+                <h3><strong><u>Display flex</u></strong></h3>
+        
+                A primeira propriedade que precisa ser declarada para que o Flexbox funcione é propriedade flex. Da seguinte
+                forma:
+        
+                display: flex;
+            </p>
+        
+            <p>
+                <h3><strong><u>Propriedade flex-direction</u></strong></h3>
+                <p>
+                    O Flexible Box Module, geralmente chamado de flexbox, foi projetado tanto como um modelo de layout
+                    unidimensional quanto como um método capaz de organizar espacialmente os elementos em uma interface, além de
+                    possuir capacidades avançadas de alinhamento. Este artigo fornece um resumo das principais funcionalidades do
+                    flexbox, as quais exploraremos com mais detalhes no restante deste guia.
+                    Quando se descreve o flexbox como sendo unidimensional, enfatiza-se o fato de que ele lida com o layout em uma
+                    dimensão de cada vez - seja uma linha ou uma coluna.
+                </p>
+                <p>
+                    A propriedade flex-direction permite alterar a direção na qual os elementos flex serão exibidos ao longo do eixo
+                    principal.
+                </p>
+                
+                <p>
+                    Ao definir as orientações como:<br><br>
+                    <strong>row:</strong> Modo linha, os elementos ão de serem organizados na orientação horizontal onde se apresentam da esquerda para a direita<br><br><strong>row-reverse:</strong> (linha reversa) ainda teremos os elementos dispostos em uma linha, entretanto, a direção da linha inicial para a final serão trocadas.
+                </p>
+                
+                <p>
+                    Ao definir as orientações como:<br><br>
+                    <strong>column:</strong> Modo coluna, os elementos ão de serem organizados na orientação vertical onde se apresentam de cima para baixo<br><br><strong>column-reverse:</strong> (coluna reversa) ainda teremos os elementos dispostos em uma coluna, entretanto, a orientação inicial para a final serão trocadas.
+                </p>
+            </p>
+        </section>
+    </article>
 
-    O módulo de layout de caixa flexível torna mais fácil projetar uma estrutura de layout responsiva e flexível sem
-    usar flutuação ou posicionamento.
-    </p>
-
+    
     <p>
-        a primeira propriedade que precisa ser declarada para que o Flexbox funcione é propriedade flex. Da seguinte
-        forma:
-        display: flex;
-    </p>
-
-    <p>
-        A propriedade flex-direction permite alterar a direção na qual os elementos flex serão exibidos ao longo do eixo
-        principal. Definindo a propriedade flex-direction como row-reverse (linha reversa) ainda teremos os elementos
-        dispostos em uma linha, entretanto, as linhas inicial e final serão trocadas.
-    </p>
-
-    <p>
-        O Flexible Box Module, geralmente chamado de flexbox, foi projetado tanto como um modelo de layout
-        unidimensional quanto como um método capaz de organizar espacialmente os elementos em uma interface, além de
-        possuir capacidades avançadas de alinhamento. Este artigo fornece um resumo das principais funcionalidades do
-        flexbox, as quais exploraremos com mais detalhes no restante deste guia.
-        Quando se descreve o flexbox como sendo unidimensional, enfatiza-se o fato de que ele lida com o layout em uma
-        dimensão de cada vez - seja uma linha ou uma coluna.
-    </p>
-    <p>
-
-        Os eixos do flexbox
+        <h3><strong><u>Os eixos do flexbox</u></strong></u></h3>
         Ao se utilizar o flexbox, é preciso ter em mente que todas as operações realizadas relacionam-se a dois eixos: o
-        eixo principal e o eixo transversal. O eixo principal é definido através da propriedade flex-direction e o eixo
+        eixo principal e o eixo transversal. O eixo principal trata-se das direções sob orientação vertical e horizontal, ou seja cima,baixo,esquerda e direita e é definido através da propriedade flex-direction e o eixo
         transversal encontra-se na direção perpendicular a ele. Como esses eixos são as engrenagens fundamentais do
         flexbox é necessário compreender minuciosamente o seu funcionamento.
     </p>
-
+    
     <p>
         Eixo principal
         A propriedade flex-direction define a direção do eixo principal e pode tem quatro valores possíveis:
@@ -83,7 +114,7 @@
 
     </p>
 
-    <p class="descricao-propiedade">Algumas propriedades como fledirection,justfy content e aligncontent já vem com os
+    <p class="descricao-propiedade">Algumas propriedades como <u>flexdirection,justfy content e aligncontent</u> já vem com os
         valores padrão</p>
 
     <!--table>(tr>th.propriedade+.valor)+tr*3>td.propriedade+td.valor-->
