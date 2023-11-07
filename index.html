@@ -88,6 +88,33 @@
         </section>
     </article>
 
+    <article>
+        <section>
+            <p>
+                <h3><strong><u>Propriedade justify-content</u></strong></h3></p>
+                <p>
+                    A propriedade justify-content é usada para alinhar os itens no eixo principal. Ela possui vários valores que determinam como os itens são distribuídos ao longo do eixo principal. Aqui estão os valores possíveis para a propriedade.<br><br>
+                </p>
+                <p>    
+                    <strong><u><a href="#flexstart">justify-content:flex-start:</a></u></strong> Os itens são alinhados no início do contêiner. No eixo horizontal (para flex-direction: row) ou no eixo vertical (para flex-direction: column), os itens ficam no canto inicial do contêiner.<br><br>
+                </p>
+                <p>
+                    <strong><u><a href="#flexend">flex-end:</a></u></strong> Os itens são alinhados no final do contêiner. No eixo horizontal ou vertical, os itens ficam no canto oposto ao início do contêiner.center: Os itens são centralizados ao longo do eixo principal do contêiner.<br><br>
+                </p>    
+                <p>
+                    <strong><u><a href="#spacebetween">space-between:</a></u></strong> Os itens são distribuídos igualmente no contêiner. O primeiro item fica no início do contêiner, o último item fica no final do contêiner e o espaço restante é dividido uniformemente entre os itens.<br><br>
+                </p>    
+                <p>
+                    <strong><u><a href="#spacearound">space-around:</a></u></strong> Os itens são distribuídos com espaçamento uniforme ao redor deles. O espaço entre os itens é o mesmo e também há espaço extra no início e no final do contêiner.<br><br>
+                </p>
+                <p>
+                    <u><strong><a href="#spaceevenly">space-evenly:</a></strong></u> Os itens são distribuídos com espaçamento uniforme ao redor deles, incluindo o espaço no início e no final do contêiner.Esses valores permitem que você controle como os itens são alinhados e distribuídos dentro de um contêiner flexível de acordo com o seu design de layout
+                </p>                    
+                
+            </p>    
+        </section>
+    </article>
+
     
     <p>
         <h3><strong><u>Os eixos do flexbox</u></strong></u></h3>
@@ -120,7 +147,7 @@
     <!--table>(tr>th.propriedade+.valor)+tr*3>td.propriedade+td.valor-->
     <table>
         <tr>
-            <th class="propriedade">propriedade</th>
+            <th class="propriedade">Propriedade</th>
             <td class="valor"><strong>valor</strong></td>
         </tr>
         <tr>
@@ -137,6 +164,8 @@
         </tr>
     </table>
 
+
+    
     <p> <strong> Container </strong> </p>
 
     <p> No exemplo abaixo o Container (Aquele que armazena um grupo de valores/informações) está utilizando um
@@ -268,109 +297,120 @@
         </article>
         <details>
             <article>
-                <p>
+                <p id="flexstart">
                     A lista vermelha está definida para flex-start:
                 </p>
                 <p>
 
                 </p>    
             </article>
+        </details>
+        <details>
             <article>
-                <p>
+                <p id="flexend">
                     A lista amarela está definida para flex-end:
-                </p>
-                <p>
-
-                </p>
-            </article>
-            <article>
-                <p>
-                    A lista azul está definida para center:
-                </p>
-                <p>
-
-                </p>
-            </article>
-            <article>
-                <p>
-                    A lista verde está definida para space-between:
-                </p>
-                <p>
-
-                </p>
-            </article>
-            <article>
-                <p>
-                    A lista rosa está definida para space-around:
-                </p>
-                <p>
-
-                </p>
-            </article>
-            <article>
-                <p>                           
-                    A lista marrom está definida para stretch:
-                </p>
-                <p>
-                    Valor padrão. As linhas se esticam para ocupar o espaço restante.
                 </p>
             </article>
         </details>
+        <details>
+            <article>
+                <p id="center">
+                    A lista azul está definida para center:
+                </p>    
+            </article>
+        </details>    
+        <details>    
+            <article>
+                <p id="spacebetween">
+                    A lista verde está definida para space-between:
+                </p>
+            </article>
+        </details>
+            
+        <details>
+            <article>
+                <p id="spacearound">
+                    A lista rosa está definida para space-around:
+                </p>
+            </article>
+        </details>
+            
+        <details>
+            <article id="stretch">
+                <p>                           
+                    A lista marrom está definida para stretch:
+                </p>
+            </article>
+        </details>
+            <p>
+                Valor padrão. As linhas se esticam para ocupar o espaço restante.
+            </p>
+        </article>
     </section>
 
-    <ul class="flex-container flex-start">
-        <li class="flex-item">1</li>
-        <li class="flex-item">2</li>
-        <li class="flex-item">3</li>
-        <li class="flex-item">4</li>
-        <li class="flex-item">5</li>
-        <li class="flex-item">6</li>
-    </ul>
+    
+        <ul class="flex-container flex-start">
+            <li class="flex-item">1</li>
+            <li class="flex-item">2</li>
+            <li class="flex-item">3</li>
+            <li class="flex-item">4</li>
+            <li class="flex-item">5</li>
+            <li class="flex-item">6</li>
+        </ul>
+    
 
-    <ul class="flex-container flex-end">
-        <li class="flex-item">1</li>
-        <li class="flex-item">2</li>
-        <li class="flex-item">3</li>
-        <li class="flex-item">4</li>
-        <li class="flex-item">5</li>
-        <li class="flex-item">6</li>
-    </ul>
+        <ul class="flex-container flex-end">
+            <li class="flex-item">1</li>
+            <li class="flex-item">2</li>
+            <li class="flex-item">3</li>
+            <li class="flex-item">4</li>
+            <li class="flex-item">5</li>
+            <li class="flex-item">6</li>
+        </ul>
+       
 
-    <ul class="flex-container center">
-        <li class="flex-item">1</li>
-        <li class="flex-item">2</li>
-        <li class="flex-item">3</li>
-        <li class="flex-item">4</li>
-        <li class="flex-item">5</li>
-        <li class="flex-item">6</li>
-    </ul>
+   
+        <ul class="flex-container center">
+            <li class="flex-item">1</li>
+            <li class="flex-item">2</li>
+            <li class="flex-item">3</li>
+            <li class="flex-item">4</li>
+            <li class="flex-item">5</li>
+            <li class="flex-item">6</li>
+        </ul>
+   
 
-    <ul class="flex-container space-between">
+    
+        <ul class="flex-container space-between">
         <li class="flex-item">1</li>
         <li class="flex-item">2</li>
         <li class="flex-item">3</li>
         <li class="flex-item">4</li>
         <li class="flex-item">5</li>
         <li class="flex-item">6</li>
-    </ul>
+        </ul>
+   
 
-    <ul class="flex-container space-around">
-        <li class="flex-item">1</li>
-        <li class="flex-item">2</li>
-        <li class="flex-item">3</li>
-        <li class="flex-item">4</li>
-        <li class="flex-item">5</li>
-        <li class="flex-item">6</li>
-    </ul>
+        <ul class="flex-container space-around">
+            <li class="flex-item">1</li>
+            <li class="flex-item">2</li>
+            <li class="flex-item">3</li>
+            <li class="flex-item">4</li>
+            <li class="flex-item">5</li>
+            <li class="flex-item">6</li>
+        </ul>
 
-    <ul class="flex-container stretch">
-        <li class="flex-item">1</li>
-        <li class="flex-item">2</li>
-        <li class="flex-item">3</li>
-        <li class="flex-item">4</li>
-        <li class="flex-item">5</li>
-        <li class="flex-item">6</li>
-    </ul>
+
+    
+        <ul class="flex-container stretch">
+            <li class="flex-item">1</li>
+            <li class="flex-item">2</li>
+            <li class="flex-item">3</li>
+            <li class="flex-item">4</li>
+            <li class="flex-item">5</li>
+            <li class="flex-item">6</li>
+        </ul>
+       
 </body>
 
 </html>
