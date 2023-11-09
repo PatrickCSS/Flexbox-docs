@@ -115,6 +115,31 @@
         </section>
     </article>
 
+    <article>
+        <p>
+            <h3><strong><u>flex wrap:</u></strong></h3>
+        
+        <p>
+            A propriedade flex-wrap é usada em contêineres flexíveis para especificar como os itens flexíveis devem ser dispostos quando não há espaço suficiente no contêiner para acomodá-los em uma única linha ou coluna, dependendo da direção principal definida pela propriedade flex-direction.<br>
+        </p> 
+            
+        <p> Existem três valores que você pode usar com a propriedade:<br><br>
+        </p>
+        <p>
+            <strong><u>nowrap:</u></strong> Os itens flexíveis são forçados a permanecerem em uma única linha ou coluna, mesmo que isso cause estouro do contêiner. Eles serão dimensionados ou espremidos para caber no espaço disponível.<br><br>
+        </p> 
+        
+         <p>
+            <strong><u>wrap:</u></strong>Os itens flexíveis são dispostos em várias linhas ou colunas, conforme necessário, para evitar o estouro do contêiner. Se não houver espaço suficiente na linha ou coluna atual, os itens serão movidos para a próxima linha ou coluna.<br><br>
+        </p>
+         
+        <p>
+            <strong><u>wrap-reverse:</u></strong>wrap-reverse: Os itens flexíveis são dispostos em várias linhas ou colunas, semelhante ao valor wrap, mas na direção oposta. Por exemplo, se a direção principal for row, os itens serão dispostos em várias linhas de cima para baixo, em vez de da esquerda para a direita.<br>
+        </p>
+        <p>
+         Ao usar flex-wrap, você tem controle sobre como os itens flexíveis são acomodados quando o espaço no contêiner é limitado
+        </p>
+    </article>
     
     <p>
         <h3><strong><u>Os eixos do flexbox</u></strong></u></h3>
@@ -139,7 +164,7 @@
         até o fim da página — na direção block.
     </p>
 
-    </p>
+    <p></p>
 
     <p class="descricao-propiedade">Algumas propriedades como <u>flexdirection,justfy content e aligncontent</u> já vem com os
         valores padrão</p>
@@ -176,21 +201,7 @@
 
 
 
-    <h3>Propriedade flex-wrap</h3>
-
-    <p>Quebra de linha com "flex-wrap"
-        Embora o flexbox seja um modelo unidimensional, é possível fazer com que elementos flex sejam agrupados em
-        múltiplas linhas. Ao fazer isso, considera-se cada linha como um novo contêiner flex. Qualquer distribuição
-        espacial ocorrerá ao longo essa linha, sem referência às linhas de ambos os lados. Para gerar a quebra
-        automática das linhas adicione a propriedade flex-wrap com o valor wrap. Assim, se elementos forem muito grandes
-        para serem exibidos em uma única linha, eles serão agrupados em outras linhas.
-
-        O exemplo prático abaixo contém elementos flex aos quais foi dada uma determinada largura, cuja soma totaliza um
-        valor grande demais para caber no container. Visto que a propriedade flex-wrap está definida como wrap, os itens
-        serão reorganizados em mais de uma linha. Trocando-se para nowrap, que também é o valor inicial, eles encolherão
-        para caber no contêiner, porque estão usando valores iniciais de flexbox que permitem que os itens encolham. O
-        uso do nowrap causaria um vazamento se os itens não encolhessem ou não diminuíssem o suficiente para caber
-    </p>
+    
     <section id="propriedadeflewflow">
         <article>        
             <h3>Propriedade flex-flow </h3>
@@ -265,14 +276,14 @@
             </strong>
         </p>
         <p>
-            O valor inicial desta propriedade é stretch e é por essa razão que, por padrão, os elementos flex se
+            O valor inicial desta propriedade é <strong><u>stretch</u></strong> e é por essa razão que, por padrão, os elementos flex se
             estendem até a maior altura. De fato, eles se esticam para preencher o contêiner flex - o item mais alto
             define a altura deste.
         </p>
 
         <p>
-            Pode-se definir a propriedade align-items como flex-start, de modo que os elementos fiquem alinhados com
-            topo do contêiner, flex-end para alinhá-los a partir da base ou center, para que o alinhamento seja
+            Pode-se definir a propriedade align-items como <strong><u>flex-start</u></strong>, de modo que os elementos fiquem alinhados com
+            topo do contêiner, <strong><u>flex-end</u></strong> para alinhá-los a partir da base ou <strong><u>center</u></strong>, para que o alinhamento seja
             centralizado.
         </p>
 
